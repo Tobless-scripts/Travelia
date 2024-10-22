@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for booking flight">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="travel, book, holiday, explore, productivity">
+    <meta name="author" content="Tobless-scripts">
+    <meta name="robots" content="index, follow">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Travelia</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="logo" id="logo">
+        <div class="container">
+            <ul>
+                <li onclick="hideSideBar()"><a href="#"><img src="close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="close" height="30" viewBox = "0 96 960 960" width="30"></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sevices</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">Login</a></li>
+            </ul>
+        <button class="signUp">Sign Up</button>
+        </div>
+        <div class="ulcont">
+            <ul class="hide">
+                <li class="hide"><a href="#">Home</a></li>
+                <li class="hide"><a href="#">About</a></li>
+                <li class="hide"><a href="#">Sevices</a></li>
+                <li class="hide"><a href="#">Pricing</a></li>
+                <li class="hide"><a href="#">Contact</a></li>
+            </ul>
+            <ul class="login hide">
+                <li><a href="#">Login</a></li>
+            </ul>
+        <button class="signUp hide">Sign Up</button>
+        <ul>
+            <li onclick="showSideBar()" id="menu"><a href="#">
+                <img src="menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="menu" height="26" viewBox = "0 96 960 960" width="26"></a>
+            </li>
+        </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <div id="container">
+                <p class="explore">Explore the world <img src="title-icon.svg" alt="world" height="16px" width="16px"></p>
+            </div>
+                <div class="img">
+                <h1 class="big">It's a Big World Out There, Go Explore</h1>
+                <p class="big2">We always make our customer happy by providing as many choices as possible</p>
+                <img src="hero-banner.png" alt="hero" id="banner">
+            </div>
+        </div>
+    </main>
+    <div id="gridCon">
+        <div id="gridChild">
+                <h3 id="serve">WHAT WE SERVE</h3>
+                <h1 id="gridtext">Top Values For You</h1>
+                <p id="gridsmall">Try a variety of benefits when using our services.</p>
+        </div>
+        <div id="grid">
+            <div id="gridChild1">
+                <img src="service-icon-1.svg" alt="img" height="80px" width="80px">
+                <h3 id="gridtext">Lots Of Choices</h3>
+                <p id="gridsmall">Total 460+ destinations that we work with.</p>
+            </div>
+            <div id="gridChild2">
+                <img src="service-icon-2.svg" alt="img" height="80px" width="80px">
+                <h3 id="gridtext">Best Tour Guide</h3>
+                <p id="gridsmall">Our tour guide with 15+ years of experience.</p>
+            </div>
+            <div id="gridChild3">
+                <img src="service-icon-3.svg" alt="img" height="80px" width="80px">
+                <h3 id="gridtext">Easy Booking</h3>
+                <p id="gridsmall">With an easy and fast ticket purchase process.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="destination">
+        <p id="dest">Top destination</p>
+        <h1>Explore Top Destination</h1>
+    </div>
+
+    <div id="destgrid">
+        <div id="destgridchild">
+            <img src="destination-1.jpg" id="destimage" class="ph" alt="img">
+            <h2>Enjoy the Beauty of the del Pincio</h2>
+            <h5>Rome, Italy</h5>
+        </div>
+        <div id="destgridchild">
+            <img src="destination-2.jpg" id="destimage" class="ph" alt="img">
+            <h2>Enjoy the Beauty of Pakistan Monument</h2>
+            <h5>Islambad, Pakistan</h5>
+        </div>
+        <div id="destgridchild">
+            <img src="destination-3.jpg" id="destimage" class="ph" alt="img">
+            <h2>Enjoy the Beauty of the Burj khalifa</h2>
+            <h5>Skyscrapper in Dubai</h5>
+        </div>
+        <div id="destgridchild">
+            <img src="destination-4.jpg" id="destimage" class="ph" alt="img">
+            <h2>Enjoy the Beauty of Milaidhoo</h2>
+            <h5>Island in the Maldives</h5>
+        </div>
+        <div id="destgridchild">
+            <img src="destination-5.jpg" class="ph" id="destimage" alt="img">
+            <h2>Enjoy the Beauty of the Ko Tao</h2>
+            <h5>Island in the Gulf of Thailand</h5>
+        </div>
+        <div id="destgridchild">
+            <img src="destination-6.jpg" class="ph" id="destimage" alt="img">
+            <h2>Enjoy the Beauty of the Grand Mediciye Mosque</p>
+            <h5>Mosque in Instabul, Turkey</h5>
+        </div>
+    </div>
+    <button class="destination">View All Destination</button>
+
+    <div id="experience">
+        <img src="experience-banner.png" alt="img" class="expimg">
+        <img src="exp-shape.svg" alt="img" class="expimage">
+        <div id="expchild">
+            <p>Our Experience</p>
+            <h1>With Our Experience We Will Serve You</h1>
+            <h2>Since we first opened we have always prioritized the convenience of our users by providing low prices and with a easy process.</h2>
+            <div id="expgrid">
+                <div id="expgridchild">
+                    <p><span>250+</span> Years experience</p>
+                </div>
+                <div id="expgridchild">
+                    <p><span>460+</span> Destination Collaboration</p>
+                </div>
+                <div id="expgridchild">
+                    <p><span>50k+</span> Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="photo">
+        <p>Photo Gallery</p>
+        <h2 id="phtxt" >Photo's From Travelers</h2>
+        <div id="photogrid">
+            <img src="gallery-1.jpg" alt="img" class="ph ph1">
+            <img src="gallery-2.jpg" alt="img" class="ph ph2">
+            <img src="gallery-3.jpg" alt="img" class="ph ph3">
+            <img src="gallery-4.jpg" alt="img" class="ph ph4">
+            <img src="gallery-5.jpg" alt="img" class="ph ph5">
+            <img src="gallery-6.jpg" alt="img" class="ph ph5">
+        </div>
+    </div>
+
+    <div id="prepare">
+        <h1 id="prep">Prepare Yourself & Let’s Explore The Beauty Of The World <img src="title-icon (1).svg" alt="img"></h1>
+        <h2>We have many special offers especially for you.</h2>
+        <button id="prepbtn">Get Started</button>
+    </div>
+
+
+    <footer>
+        <div id="footcon">
+            <div id="footconchild">
+                <img src="logo.svg" alt="img" class="logoimg">
+                <ul>
+                    <li class="footli">We always make our customer happy by providing as many choices as possible</li>
+                </ul>
+            </div>
+            <div id="footconchild">
+                <p class="foottext">About</p>
+                <ul>
+                    <li class="footli">About Us</li>
+                    <li class="footli">Features</li>
+                    <li class="footli">News</li>
+                    <li class="footli">Menu</li>
+                </ul>
+            </div>
+            <div id="footconchild">
+                <p class="foottext">Company</p>
+                <ul>
+                    <li class="footli">Why Company</li>
+                    <li class="footli">Partner with us</li>
+                    <li class="footli">FAQ</li>
+                    <li class="footli">Blog</li>
+                </ul>
+            </div>
+            <div id="footconchild">
+                <p class="foottext">Support</p>
+                <ul>
+                    <li class="footli">Account</li>
+                    <li class="footli">Support Centre</li>
+                    <li class="footli">Feedback</li>
+                    <li class="footli">Contact Us</li>
+                    <li class="footli">Accesibility</li>
+                </ul>
+            </div>
+            <div id="footconchild">
+                <p class="foottext">Get In Touch</p>
+                <ul>
+                    <li class="footli">Question or feedback? we'd love to hear from you</li>
+                    <input type="text" name="footinp" id="footinput" placeholder="Enter Email">
+                </ul>
+            </div>
+        </div>
+
+        <div id="footsec">
+            <h4 class="sectext">&copy Copyright 2024. Prowdly Developed By <a href="#" id="sect">TOBLESS SCRIPTS</a></h4>
+            <p class="seca"><a href="#">Privacy Policy</a></p>
+            <p class="seca"><a href="#">Terms and conditions</a></p>
+        </div>
+    </footer>
+
+    
+</body>
+<script src="script.js"></script>
+
+</html>
