@@ -130,11 +130,14 @@ ul li a {
     @media screen and (max-width:1000px) {
             .fixed{
                 position: fixed;
-                margin-top: 7vw;
+                margin-top: 5vw;
                 width: 100%;
             }
         .hide{
             display: none;
+        }
+        main{
+            margin-top: 10vw;
         }
     }
     @media screen and (max-width:417px) {
